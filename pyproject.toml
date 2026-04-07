@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "magos"
+version = "1.0.0"
+description = "A not-so simple, lightweight python fake-os."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pygame>=2.0.0",
+    "colorama>=0.4.0",
+    "requests>=2.25.0"
+]
+
+[project.scripts]
+magos = "Main:main"
+
+[tool.setuptools]
+packages = ["."]
